@@ -12,7 +12,7 @@ def get_contestant_name(data, occupation)
    v.each do |k, v|
      if k.values.include?(occupation)
        return k.values[0]
-     end  
+     end
    end
  end
 end
