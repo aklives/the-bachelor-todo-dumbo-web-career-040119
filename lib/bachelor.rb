@@ -1,7 +1,10 @@
 def get_first_name_of_season_winner(data, season)
 
- data[season].find{|x| x = "Winner"}[:name]
-
+ data[(season.to_sym)].each do |k|
+  winner = k.find {|x| x = "Winner"}
+  return winner[1].split[0]
+ end
+    
 end
 
 def get_contestant_name(data, occupation)
