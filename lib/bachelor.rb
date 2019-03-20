@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
   winner = k.find {|x| x = "Winner"}
   return winner[1].split[0]
  end
-    
+
 end
 
 def get_contestant_name(data, occupation)
